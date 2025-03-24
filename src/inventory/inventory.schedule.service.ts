@@ -70,8 +70,7 @@ export class InventoryScheduleServices {
     }
   }
 
-  //   @Cron('*/15 * * * *', { name: 'fetchToday' })
-  @Cron('*/1 * * * *', { name: 'fetchToday' })
+    @Cron('*/15 * * * *', { name: 'fetchToday' })
   async fetchAvailabilityEveryFifteenMinutes() {
     try {
       const today = new Date();
